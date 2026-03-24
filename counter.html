@@ -1,0 +1,41 @@
+<html>
+    <head></head>
+    
+    <body>
+        <h2 id="mcount">
+            0
+        </h2>
+        <button onclick="increment()">
+            Increment
+        </button>
+        <button onclick="decrement()">
+            Decrement
+        </button>
+        <p>Clicks on Increment: <span id ="inc">0</span></p>
+        <p>Clicks on Decrement: <span id ="dec">0</span></p>
+        <script>
+            let count = 0;
+            let dcount=0;
+            let icount=0;
+            let mcount = document.getElementById("mcount");
+            let inc=document.getElementById("inc");
+            let dec=document.getElementById("dec");
+            
+            function increment(){
+                count++;
+                icount++;
+                mcount.innerHTML=count;
+                inc.innerHTML=icount;
+
+            }
+
+            function decrement(){
+                count--;
+                dcount++;
+                mcount.innerHTML=count;
+                dec.innerHTML=dcount;
+
+            }
+        </script>
+    </body>
+</html>
